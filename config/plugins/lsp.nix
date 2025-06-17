@@ -22,20 +22,9 @@
     servers = {
       nixd = {
         enable = true;
-        settings.formatting.command = [ "nixpkgs-fmt" ];
-      };
-      clangd = {
-        enable = true;
+        settings.formatting.command = [ "nixfmt" ];
       };
       bashls.enable = true;
-      rust_analyzer = {
-        enable = true;
-        # Use the more up-to-date versions in a devshell
-        installRustc = false;
-        installCargo = false;
-      };
-      ts_ls.enable = true;
-      yamlls.enable = true;
     };
   };
 }
