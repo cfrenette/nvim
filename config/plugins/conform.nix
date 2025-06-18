@@ -3,11 +3,11 @@
     enable = true;
     settings = {
       formatters_by_ft = {
-        nix = [ "nixpkgs-fmt" ];
-        rust = [ "rustfmt" ];
+        nix = [ "nixfmt" ];
+        bash = [ "beautysh" ];
       };
       format_on_save = {
-        lsp_format = "never";
+        lsp_format = "fallback";
         timeoutMs = 500;
       };
     };
