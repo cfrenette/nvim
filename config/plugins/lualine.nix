@@ -20,4 +20,3 @@
     showmode = false;
   };
 }
-

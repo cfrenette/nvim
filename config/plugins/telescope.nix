@@ -2,21 +2,31 @@
   plugins.telescope = {
     enable = true;
     keymaps = {
-      # Not allowed yet in 24.05
-      # "<leader>ff" = {
-      #   action = "find_files";
-      #   options = {
-      #       desc = "[F]ind [F]iles"
-      #   };
-      # }
-      "<leader>ff" = "find_files";
-      "<leader>fg" = "live_grep";
-      "<leader>fh" = "help_tags";
-      "<leader>fd" = "diagnostics";
+      "<leader>ff" = {
+        action = "find_files";
+        options = {
+          desc = "[F]ind [F]iles";
+        };
+      };
+      "<leader>fg" = {
+        action = "live_grep";
+        options = {
+          desc = "[F]ind [G]rep";
+        };
+      };
+      "<leader>fh" = {
+        action = "help_tags";
+        options = {
+          desc = "[F]ind [H]elp Tags";
+        };
+      };
+      "<leader>fd" = {
+        action = "diagnostics";
+        options = {
+          desc = "[F]ind [D]iagnostics";
+        };
+      };
     };
-    # extensions = {
-    #  ui-select.enable = true;
-    # };
   };
 
   # Suppress warning about deprecated behavior
@@ -24,4 +34,3 @@
     enable = false;
   };
 }
-
