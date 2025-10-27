@@ -11,7 +11,9 @@
 
     treesitter-refactor = {
       enable = true;
-      highlightDefinitions.enable = true;
+      settings = {
+        highlight_definitions.enable = true;
+      };
     };
   };
 }
