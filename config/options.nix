@@ -7,8 +7,8 @@
       relativenumber = true;
 
       # Tabs
-      tabstop = 4;
       shiftwidth = 4;
+      softtabstop = -1;
       expandtab = true;
       autoindent = true;
 
@@ -30,9 +30,8 @@
       {
         event = "FileType";
         pattern = "nix";
-        command = "setlocal tabstop=2 shiftwidth=2 softtabstop=2";
+        command = "setlocal shiftwidth=2";
       }
     ];
   };
 }
-
